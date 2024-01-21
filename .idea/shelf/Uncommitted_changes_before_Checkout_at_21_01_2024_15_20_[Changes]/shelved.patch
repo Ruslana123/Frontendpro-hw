@@ -1,0 +1,19 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Title</title>\r\n</head>\r\n<body>\r\n<script src=\"/main.js\"></script>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 6ffff30aac87b581e122848a50c4a1a1ecc70776)
++++ b/index.html	(date 1705843231708)
+@@ -5,6 +5,6 @@
+     <title>Title</title>
+ </head>
+ <body>
+-<script src="/main.js"></script>
++
+ </body>
+ </html>
+\ No newline at end of file
