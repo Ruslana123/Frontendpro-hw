@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fa7e96d-399f-48ff-82ff-b988e9b0e703" name="Changes" comment="" />
+    <list default="true" id="6fa7e96d-399f-48ff-82ff-b988e9b0e703" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw-11" />
+        <entry key="$PROJECT_DIR$" value="hw-14" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,6 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "hw-13",
     "last_opened_file_path": "D:/#Документы - Win/Рабочий стол/Front End PRO/Frontendpro-hw",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -58,8 +62,7 @@
       <workItem from="1706945490612" duration="3442000" />
       <workItem from="1706971656165" duration="3939000" />
       <workItem from="1707075779973" duration="1388000" />
-      <workItem from="1707238704046" duration="978000" />
-      <workItem from="1707240251461" duration="687000" />
+      <workItem from="1707238704046" duration="6870000" />
     </task>
     <servers />
   </component>

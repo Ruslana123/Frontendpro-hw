@@ -84,12 +84,12 @@ function usersBalanceSumm(users) {
 
 let usersResult = usersCheck(users);
 
-console.log('Пользователи у которых баланс больше $2000');
+console.log('Користувачі у яких баланс більше $2000');
 for (user of usersResult) {
-    console.log(user['name']);
+    console.log(user['phone']);
 }
 
 
-console.log(`Общая сумма балансов пользователей у которых баланс больше $2000: ${usersBalanceSumm(usersResult)}`);
 
-console.log(`Общая сумма балансов пользователей: ${usersBalanceSumm(users)}`);
+
+console.log(`Загальна сума балансів користувачів: ${usersBalanceSumm(users)}`);
