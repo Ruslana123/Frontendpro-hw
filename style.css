@@ -1,0 +1,13 @@
+* {
+    cursor: pointer;
+}
+
+#myDiv {
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-color: blue;
+
+}
+
+
