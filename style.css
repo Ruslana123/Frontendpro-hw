@@ -1,0 +1,10 @@
+.mainTable {
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+
+}
