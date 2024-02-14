@@ -46,9 +46,13 @@ for (let i = 2; i <= x; i++) {
 // зведення числа 3 у деякий ступінь. (Наприклад, числа 9, 81 можна отримати, а 13 - не можна).
 
 let number = parseInt(prompt("Введить щоб перевірити чи можна отримати число з трійки в деякий ступені"));
-
-if (number % 3 === 0) {
-    console.log("Число можна отримати");
-}   else {
-    console.log("Число не можна отримати");
+let result = 0;
+let degree = 1;
+while (result < number) {
+    degree++;
+    result = Math.pow(3, degree);
 }
+if(result === number) {
+    console.log("Можно отримати")
+} else
+{console.log("Не можна отримати")}
