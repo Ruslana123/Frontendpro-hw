@@ -2,18 +2,30 @@
 // Довжину основного масиву і внутрішніх масивів задає користувач.
 // Значення всіх елементів всіх масивів задає користувач.
 
-const mainN = prompt('Введите длину главного массива');
-const subN = prompt('Введите длину внутренних массивов');
 
 
-function doarr(mainN, subN) {
-    const arr = new Array(+mainN).fill(0)
-        .map((_, ind) =>
-            new Array(+subN).fill(0).map((_, i) => prompt(`Введите элемент ${i} в подмассиве ${ind}`)));
-    console.log('Ваш массив:' + arr.map(subArr => '\n' + subArr));
+
+
+function doarr() {
+    const mainN = +prompt('Введіть довжину головного масиву');
+    let mainArr = [];
+    for(let i = 0; i < mainN; i++) {
+        const subArr = +prompt(`Введіть довжину внутрішнього масиву ${i + 1}`);
+        let immerArr = [];
+
+        for(let j = 0; j < subArr; j++) {
+            const value = +prompt(`Введіть значення ${j + 1} для масиву ${i + 1}`);
+            immerArr.push(value);
+        }
+
+        mainArr.push(immerArr);
+
+    }
+
+    return mainArr;
 
 }
-doarr(mainN, subN);
+console.log(doarr());
 
 
 
@@ -52,13 +64,17 @@ console.log(creatArr(arr1));
 
 
 const text = prompt("Введить текст");
-const arr2 = [prompt("Введить литери")]
+const arr2 = prompt("Введіть літери через кому без пробілів").split(",")
 console.log(arr2);
 function funk(text, arr2) {
-    for (let i = 0; i < arr2.length; i++) {
-        text.replaceAll(arr2[i], "");
+    let resalt = " ";
+    for (let i = 0; i < text.length; i++) {
+        if(!arr2.includes(text[i])) {
+            resalt += text[i]
+
+        }
 }
-return text;
+return resalt;
 
 }
 
@@ -71,7 +87,7 @@ console.log(funk(text, arr2));
 
 
 
-function doMath(x, znak, y) {
+function doMath() {
     x = +prompt("Введите первое число");
     y = +prompt("Введите второе число");
     znak = prompt("Введите операцию +, -, *, /, %, ^ ");
