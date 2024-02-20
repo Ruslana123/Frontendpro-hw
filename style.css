@@ -1,0 +1,18 @@
+.slide {
+    width: 300px;
+    height: 400px;
+}
+
+.prev-bt,
+.next-btn {
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
