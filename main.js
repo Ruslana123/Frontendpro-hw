@@ -1,8 +1,8 @@
-const arrN = prompt("Ведить довжину массиву");
+const arrN = prompt("Введіть довжину масиву");
 let myArr = [];
 
 for(let i = 0; i < arrN; i++) {
-    const value = +prompt(`Введить числове значення єлемента массиву ${i + 1}`);
+    const value = +prompt(`Введіть числове значення елемента масиву ${i + 1}`);
     myArr.push(value);
 }
 
