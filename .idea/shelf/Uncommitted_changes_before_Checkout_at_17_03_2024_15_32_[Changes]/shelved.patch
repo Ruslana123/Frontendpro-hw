@@ -1,0 +1,43 @@
+Index: main.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>const smiles = [\r\n    {\r\n        smile: \"&#128521;\",\r\n        vote_counter: 0\r\n    },\r\n    {\r\n        smile: \"&#128517;\",\r\n        vote_counter: 0\r\n    },\r\n    {\r\n        smile: \"&#128514;\",\r\n        vote_counter: 0\r\n    },\r\n    {\r\n        smile: \"&#128513;\",\r\n        vote_counter: 0\r\n    },\r\n    {\r\n        smile: \"&#128512;\",\r\n        vote_counter: 0\r\n    },\r\n    {\r\n        smile: \"&#128512;\",\r\n        vote_counter: 0\r\n    },\r\n\r\n]\r\nconst wrapper = document.querySelector(\"#wrapper\");\r\n\r\n\r\n\r\nsmiles.forEach(item => {\r\n    const mysmile = document.createElement('div');\r\n    mysmile.innerHTML = item.smile;\r\n    mysmile.classList.add('smile');\r\n\r\n    wrapper.appendChild(mysmile);\r\n\r\n    mysmile.addEventListener(\"click\",  ()=> {\r\n        item.vote_counter += 1;\r\n        counter.textContent = item.vote_counter;\r\n\r\n    });\r\n\r\n    const counter = document.createElement(\"div\");\r\n    counter.textContent = item.vote_counter;\r\n    counter.classList.add('vote-counter');\r\n\r\n    mysmile.appendChild(counter);\r\n\r\n});\r\n\r\n\r\n
+===================================================================
+diff --git a/main.js b/main.js
+--- a/main.js	
++++ b/main.js	
+@@ -25,11 +25,16 @@
+     },
+ 
+ ]
++const smilesToShow = localStorage.getItem("smiles")
++    ?
++    JSON.parse(localStorage.getItem("smiles"))
++    :
++    smiles
++
+ const wrapper = document.querySelector("#wrapper");
+ 
+ 
+-
+-smiles.forEach(item => {
++smilesToShow.forEach(item => {
+     const mysmile = document.createElement('div');
+     mysmile.innerHTML = item.smile;
+     mysmile.classList.add('smile');
+@@ -40,6 +45,8 @@
+         item.vote_counter += 1;
+         counter.textContent = item.vote_counter;
+ 
++        localStorage.setItem('smiles', JSON.stringify(smilesToShow));
++
+     });
+ 
+     const counter = document.createElement("div");
+@@ -51,3 +58,6 @@
+ });
+ 
+ 
++
++
++
