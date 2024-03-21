@@ -3,8 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="main">
+	<div class="wrapper">
+		<div id="category" class="category-products">
+		
+		</div>
+		<div id="product-list" class="product-list">
+		
+		</div>
+		<div id="info-about-product" class="info-product">
+		
+		</div>
+		<div id="modal" class="modal-form">
+			<h2>Order Informationу</h2>
+			<form id="order-form" class="order-form">
+				<label for="fullname">Name:</label>
+				<input type="text" id="fullname" name="fullname" required>
+				
+				<label for="city">Місто:</label>
+				<input type="text" id="city" name="city" required>
+				
+				<label for="delivery">Delivery Method:</label>
+				<select id="delivery" name="delivery" required>
+					<option value="new-post">№ 36</option>
+					<option value="courier">№ 37</option>
+				</select>
+				
+				<label for="payment">Payment Method:</label>
+				<select id="payment" name="payment" required>
+					<option value="cash">Cash</option>
+					<option value="card">Card</option>
+					<option value="cod">Courier</option>
+				</select>
+				
+				<label for="quantity">Quantity:</label>
+				<input type="number" id="quantity" name="quantity" min="1" required>
+				
+				<label for="comment">Comment:</label>
+				<textarea id="comment" name="comment"></textarea>
+				
+				<button id="submit-btn" type="submit" class="submit-btn">Submit</button>
+			</form>
+		</div>
+	
 
+	</div>
+	<div id="order-info" class="order-info">
+
+	</div>
+</div>
+
+<script src="/main.js"></script>
 </body>
 </html>
